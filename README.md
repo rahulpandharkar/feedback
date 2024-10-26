@@ -28,11 +28,11 @@ The platform consists of two components:
 
 ### Image Recognition
 ![Image Recognition](Screenshots/image_recognition.png)
-*Here is the image recognition feature that allows users to upload images for processing.*
+*Here is the image recognition feature that allows users to upload images for Recognizing the anomaly.*
 
 ### Chatbot
 ![Chatbot](Screenshots/Chatbot.png)
-*This is the chatbot interface where users can interact and get responses in real-time.*
+*This is the chatbot interface where users can interact and get responses in real-time from an AI-Powered Chatbot.*
 
 ### User Manual
 ![User Manual](Screenshots/user_manual.png)
@@ -40,7 +40,7 @@ The platform consists of two components:
 
 ### Admin Dashboard
 ![Admin Dashboard](Screenshots/admin_dashboard.png)
-*The admin dashboard provides an overview of user activities and system metrics.*
+*The admin dashboard provides an overview of all the issues reported and "hot topics".*
 
 
 ## Prerequisites
