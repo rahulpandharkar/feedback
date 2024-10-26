@@ -24,22 +24,27 @@ The platform consists of two components:
 
 ### Home Page
 ![Home Page](Screenshots/home_page.png)
+
 *This is the home page of the application, offering navigation to various features.*
 
 ### Image Recognition
 ![Image Recognition](Screenshots/image_recognition.png)
+
 *Here is the image recognition feature that allows users to upload images for Recognizing the anomaly.*
 
 ### Chatbot
 ![Chatbot](Screenshots/Chatbot.png)
+
 *This is the chatbot interface where users can interact and get responses in real-time from an AI-Powered Chatbot.*
 
 ### User Manual
 ![User Manual](Screenshots/user_manual.png)
+
 *This screenshot shows the user manual that guides users through the application functionalities.*
 
 ### Admin Dashboard
 ![Admin Dashboard](Screenshots/admin_dashboard.png)
+
 *The admin dashboard provides an overview of all the issues reported and "hot topics".*
 
 
