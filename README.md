@@ -11,9 +11,8 @@ The platform consists of two components:
 ## Table of Contents
 - [Features](#Features)
 - [Screenshots](#Screenshots)
-- [Adding Images](#adding-images)
-- [Contributing](#contributing)
-- [License](#license)
+- [Prerequisites](#Prerequisities)
+- [Setup Guide](#Setup Guide)
 
 ## Features
 - AI-based image analysis and categorization.
