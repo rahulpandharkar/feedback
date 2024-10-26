@@ -1,0 +1,8 @@
+Flask
+torch
+pandas
+folium
+matplotlib
+transformers
+huggingface-hub
+wordcloud
