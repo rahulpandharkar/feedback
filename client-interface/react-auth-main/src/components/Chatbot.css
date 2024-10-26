@@ -1,0 +1,101 @@
+/* Chatbot.css */
+
+.chatbot-container {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a4d);
+    border-radius: 10px;
+    padding: 30px;
+    color: #f0f0f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 20px auto; /* Center the container */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.chatbox {
+    height: 400px; /* Set a fixed height for the chatbox */
+    overflow-y: auto; /* Enable scrolling */
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.chat-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    position: relative; /* Added for possible future styling */
+    transition: background-color 0.3s;
+}
+
+.user {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto; /* Align user messages to the right */
+    text-align: right;
+}
+
+.bot {
+    background-color: #4e4e72;
+    color: white;
+    margin-right: auto; /* Align bot messages to the left */
+    text-align: left;
+}
+
+.typing {
+    animation: typing 1.5s infinite;
+    color: #ccc; /* Light color for typing indicator */
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.chatbot-input {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    color: white; /* Ensure button text is visible */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.chatbot-response {
+    background-color: #4e4e72;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

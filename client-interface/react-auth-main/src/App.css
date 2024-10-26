@@ -1,0 +1,419 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+body {
+  background-color: #0d1117; /* Dark background */
+  background-image: url('aa9b66e9-0f9b-4aed-834b-f846a7cc272b.jpg'); /* Path to background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #c9d1d9; /* Light text */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container & Layout Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: #c9d1d9;
+}
+
+/* Button Styles */
+.btn-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #161b22;
+  padding: 10px 0;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.5); /* Elevation effect */
+}
+
+.btn-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #c9d1d9;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.btn-item:hover {
+  color: #1e7e32; /* Highlight on hover */
+}
+
+.btn-icon {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.btn-primary {
+  background-color: #238636;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #1e7e32;
+}
+
+/* Input & Form Styles */
+.input-text,
+.select-box,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #21262d;
+  border: 1px solid #3b4045;
+  border-radius: 6px;
+  color: #c9d1d9;
+  margin-top: 5px;
+}
+
+.input-text:focus,
+.select-box:focus,
+.textarea:focus {
+  border-color: #238636;
+  outline: none;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #161b22;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border: 1px solid #3b4045;
+  text-align: left;
+  color: #c9d1d9;
+}
+
+.table th {
+  background-color: #21262d;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #1f2328;
+}
+
+/* Alert Styles */
+.alert {
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.alert-success {
+  background-color: #3bb273;
+  color: #fff;
+}
+
+.alert-error {
+  background-color: #d73a4a;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .btn-container {
+    flex-direction: column; /* Stack buttons vertically for smaller screens */
+    gap: 10px;
+  }
+}
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around; /* Evenly space out the items horizontally */
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #ffcc00; /* Optional: Change color on hover */
+}
+
+.nav-item span {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px; /* Add space above the icons */
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Adjust spacing between icons */
+  margin-top: 10px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.icon-item span {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: white; /* Make icons and text white */
+  transition: transform 0.2s, color 0.3s;
+}
+
+.icon-item span {
+  margin-top: 5px;
+  font-size: 14px;
+  color: white; /* Make text under the icon white */
+}
+
+.icon-item:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+  color: #f1f1f1; /* Slightly lighter white on hover */
+}
+.google-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.google-login-btn {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.google-login-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.google-login-btn:hover {
+  transform: scale(1.1);
+}
+.google-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.google-login-btn {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.google-login-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.google-login-btn:hover {
+  transform: scale(1.1);
+}
+
+.google-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.google-login-btn {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.google-login-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.google-login-btn:hover {
+  transform: scale(1.1);
+}
+.google-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.google-login-btn {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional, to vertically center if height is defined */
+  margin-top: 20px; /* Optional, for spacing */
+}
+/* App.css */
+.home-container {
+  padding: 20px;
+  max-width: 600px; /* Limit the width for better alignment */
+  margin: auto; /* Center the container */
+}
+/* Style for input boxes */
+input[type="text"] {
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounding the corners */
+  padding: 10px; /* Padding inside the input */
+  width: 360px; /* Width of the input */
+  transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Style for suggestion item */
+.suggestion-item {
+  color: black; /* Set font color to black */
+  margin-top: 15px; /* Spacing above */
+  font-size: 16px; /* Font size */
+}
+
+
+.icons-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the icons */
+  gap: 20px; /* Space between icons */
+  margin-top: 20px; /* Space above the icons */
+}
+
+.icon-item {
+  display: flex; /* Flex for icon and text */
+  flex-direction: column; /* Stack icon above text */
+  align-items: center; /* Center the icon and text */
+  cursor: pointer; /* Pointer cursor for clickable items */
+  transition: transform 0.2s; /* Smooth transform effect */
+}
+
+.icon-item:hover {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+/* Optional: Add styling for suggestion item */
+.suggestion-item {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f8f9fa; /* Light background for suggestions */
+  border: 1px solid #dee2e6; /* Border for suggestions */
+}
