@@ -23,7 +23,7 @@ model_dir = "./llama-models/model"
 tokenizer_dir = "./llama-models/tokenizer"
 
 # Login to Hugging Face Hub
-login("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")
+login("add_your_llama_api_key")
 
 # Check if the model already exists; if not, download it
 if not os.path.exists(model_dir):
