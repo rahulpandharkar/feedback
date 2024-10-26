@@ -12,7 +12,7 @@ The platform consists of two components:
 - [Features](#Features)
 - [Screenshots](#Screenshots)
 - [Prerequisites](#Prerequisities)
-- [Setup Guide](#Setup Guide)
+- [Setup Guide](#Setup-Guide)
 
 ## Features
 - AI-based image analysis and categorization.
@@ -49,7 +49,7 @@ The platform consists of two components:
 - [Firebase](https://firebase.google.com/) account for backend setup
 - [LLaMA API Key](https://llama.ai/)
 
-## Setup Guide
+## Setup-Guide
 
 ### Client Interface
 
